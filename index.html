@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1>Eleventy Test</h1>
+
+<p>this is a paragraph</p>
+
+<ul class="listing">
+{%- for post in collections.posts -%}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a> -
+    <time datetime="{{ post.date }}">{{ post.data.date | readableDate }}</time>
+  </li>
+{%- endfor -%}
+</ul>
