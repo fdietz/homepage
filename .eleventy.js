@@ -11,15 +11,29 @@ module.exports = function(eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addLayoutAlias("page", "layouts/page.html");
-  eleventyConfig.addLayoutAlias("post", "layouts/post.html");
+  eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
+  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Copy the `assets` directory to the compiled site folder
   eleventyConfig.addPassthroughCopy({ "assets/images": "images" });
+  eleventyConfig.addPassthroughCopy("manifest.json");
 
   // blogpost collection
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getFilteredByGlob("./posts/*.md");
+  });
+
+  const htmlmin = require("html-minifier");
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: false, // we need comments to identify the expcerpt split marker.
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
   });
 
   // projects collection

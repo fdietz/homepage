@@ -13,7 +13,7 @@ But, please don't be afraid of diving right into this article with me. I will po
 We will start with a simple example component and gradually improve its functionality.
 
 <figure>
-  <img src="image_card.png" width="50%" alt="Who doesn't like cats?">
+  <img src="/images/image_card.png" width="50%" alt="Who doesn't like cats?">
   <figcaption>Example 1 - Who doesn't like cats?</figcaption>
 </figure>
 

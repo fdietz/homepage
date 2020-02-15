@@ -12,7 +12,7 @@ There's one catch though we have not discussed. The content we pass to our slot 
 Probably the most canonical example for this kind of scenario is a todo list which renders for each todo a checkbox with name.
 
 <figure>
-  <img src="/images/list.png" width="50%" alt="Example 1"%}
+  <img src="/images/list.png" width="50%" alt="Example 1">
   <figcaption>Example 1</figcaption>
 </figure>
 
