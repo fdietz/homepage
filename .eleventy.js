@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginRss);
 
-  eleventyConfig.addLayoutAlias("default", "layouts/default.html");
+  eleventyConfig.addLayoutAlias("page", "layouts/page.html");
   eleventyConfig.addLayoutAlias("post", "layouts/post.html");
 
   // Copy the `assets` directory to the compiled site folder
