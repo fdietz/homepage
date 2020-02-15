@@ -8,6 +8,12 @@
     <meta name="description" content="fdietz.github.io">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {% if title %}
+      <title> {{title}}</title>
+    {% else %}
+      <title>Frederik Dietz</title>
+    {% endif %}
+
     <link rel="stylesheet" href="/assets/sass/main.css">
     
     <link href='//fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
