@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.html");
 
   // Copy the `assets` directory to the compiled site folder
-  eleventyConfig.addPassthroughCopy("assets/images");
+  eleventyConfig.addPassthroughCopy({ "assets/images": "images" });
 
   // blogpost collection
   eleventyConfig.addCollection("posts", function(collection) {
@@ -24,6 +24,10 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addCollection("projects", function(collection) {
   //   return collection.getFilteredByGlob("./src/projects/*.md");
   // });
+
+  eleventyConfig.addShortcode("asset", function(name, width, alt) {
+    return name;
+  });
 
   // limit filter
   eleventyConfig.addFilter("limit", function(array, limit) {
