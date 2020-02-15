@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-example",
+  "name": "fdietz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frederik Dietz Home",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
@@ -9,14 +9,17 @@
     "serve": "eleventy --serve"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Frederik Dietz",
+    "email": "fdietz@gmail.com",
+    "url": "https://fdietz.github.io"
+  },
+  "license": "UNLICENSED",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "moment": "^2.24.0"
-  },
-  "dependencies": {
-    "eleventy-plugin-sass": "^1.0.0"
+    "eleventy-plugin-sass": "^1.0.0",
+    "luxon": "^1.22.0"
   }
 }
