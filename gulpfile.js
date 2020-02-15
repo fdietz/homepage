@@ -15,7 +15,7 @@ gulp.task("css", function() {
 });
 
 gulp.task("js", function() {
-  return gulp.src("./src/js/**/*.js").pipe(gulp.dest("./_includes/js"));
+  return gulp.src("./assets/js/**/*.js").pipe(gulp.dest("./_includes/js"));
 });
 
 /*
