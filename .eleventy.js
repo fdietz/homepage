@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
-
+const CleanCSS = require("clean-css");
+const Terser = require("terser");
 const pluginSass = require("eleventy-plugin-sass");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -21,19 +22,6 @@ module.exports = function(eleventyConfig) {
   // blogpost collection
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getFilteredByGlob("./posts/*.md");
-  });
-
-  const htmlmin = require("html-minifier");
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if (outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: false, // we need comments to identify the expcerpt split marker.
-        collapseWhitespace: true
-      });
-      return minified;
-    }
-    return content;
   });
 
   // projects collection
@@ -66,6 +54,33 @@ module.exports = function(eleventyConfig) {
     }
 
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
+
+  eleventyConfig.addFilter("jsmin", function(code) {
+    let minified = Terser.minify(code);
+    if (minified.error) {
+      console.log("Terser error: ", minified.error);
+      return code;
+    }
+
+    return minified.code;
+  });
+
+  const htmlmin = require("html-minifier");
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: false, // we need comments to identify the expcerpt split marker.
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
   });
 
   return {

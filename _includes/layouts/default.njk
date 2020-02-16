@@ -9,26 +9,30 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
 
-    <style>{% include "css/main.css" %}</style>
+    {% set basecss %}
+      {% include "css/base.css" %}
+    {% endset %}
+    {% set maincss %}
+      {% include "css/main.css" %}
+    {% endset %}
+    {% set prismcss %}
+      {% include "css/prism.css" %}
+    {% endset %}
+
+    <style>
+      {{ basecss | cssmin | safe }}
+      {{ maincss | cssmin | safe }}
+      {{ prismcss | cssmin | safe }}
+    </style>
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
     <link href='//fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="fixed">
-    <nav class="top-bar">
-      <a href="/" class="title">
-        <img src="/images/profile_2018_small.jpg" alt="profile" class="avatar">
-      </a>
-      <ul class="menu">
-        <li><a href="/archive/index.html">archive</a></li>
-        <li><a href="/projects/index.html">projects</a></li>
-        <li><a href="/books/index.html">books</a></li>
-        <li><a href="/about/index.html">about</a></li>
-      </ul>
-    </nav>
-  </div>
+  <header class="fixed">
+    {% include "navigation.njk" %}
+  </header>
 
   {{ content | safe }}
 
@@ -39,6 +43,12 @@
       |
       <a href="http://twitter.com/fdietz/">@fdietz</a>
   </footer>
-   <script>{% include "js/index.js" %}</script>
+
+  {% set js %}
+    {% include "js/main.js" %}
+  {% endset %}
+   <script>
+  {{ js | jsmin | safe }}
+</script>
 </body>
 </html>
