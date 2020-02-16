@@ -4,5 +4,16 @@ layout: layouts/default.njk
     
 <div class="main-content">
   <h1>{{title}}</h1>
+  
+  <div class="post-meta">
+    {{ page.date | readableDate }}<span class="divider">•</span>
+    <div class="post-tag-list">
+      {% for tag in tags -%}
+        <span><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></span>
+      {% endfor -%}
+    </div>
+  </div>
+
+
   {{ content | safe }}
 </div>

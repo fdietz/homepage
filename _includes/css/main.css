@@ -77,3 +77,15 @@ nav .menu > li a {
   padding: 0 var(--space-1);
   overflow: hidden;
 }
+
+.post-meta {
+  margin-bottom: 2rem;
+}
+
+.post-tag-list {
+  display: inline-block;
+}
+
+.divider {
+  margin: 0 0.5em;
+}
