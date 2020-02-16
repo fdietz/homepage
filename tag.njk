@@ -1,0 +1,24 @@
+---
+layout: page
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+{% set taglist = collections[ tag ] %}
+
+  <p class="by-line">Blog posts tagged:</p>
+  <h1>{{ tag }}</h1>
+  <p>
+    There are {{ taglist.length }} items tagged <em>#{{ tag }}</em>.<br />
+    And there a lots of other <a href="/tags">tags</a> to explore.
+  </p>
+
+  <ul>
+    {% for post in taglist | reverse %}
+      <li>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
