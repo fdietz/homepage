@@ -107,11 +107,12 @@ nav .menu > li a {
   background-color: #f6f6f6;
 }
 
-.media:hover {
-  background-color: #f6f6f6;
+.media img {
+  width: 120px;
 }
 
 .media-body {
+  flex: 1;
   display: block;
   margin-left: 1rem;
 }
@@ -145,7 +146,7 @@ footer {
 }
 
 .postlist-meta {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   color: var(--color-gray);
 }
 
@@ -162,17 +163,13 @@ footer {
 .taglist-item {
   display: flex;
   flex: none;
-  color: white;
-  background-color: var(--link-color);
-  padding: 0.25em;
+
+  background-color: var(--color-gray-light);
+  border-radius: 4px;
+  padding: 0.25rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
   text-transform: lowercase;
-  border-radius: 4px;
-}
-
-.taglist-item a {
-  color: inherit;
 }
 
 main figure {
