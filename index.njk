@@ -11,10 +11,20 @@ in beautiful Hamburg, Germany.</p>
 <h2>Blog Posts</h2>
 
 {% set postslist = collections.posts | head(-5) %}
-{% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+
+<h2>Tags</h2>
+
+<ul class="taglist list-unstyled">
+  {% for tag in collections.tagList %}
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <li class="taglist-item">
+      <a href="{{ tagUrl | url }}">#{{ tag }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 All <a href="/tags">tags</a>.
 
