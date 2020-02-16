@@ -24,8 +24,8 @@ title: Recipes with Angular.js
   If you are using <a href="http://angularjs.org/">Angular.js</a>, or considering it, this cookbook provides easy to follow recipes for issues you are likely to face. Each recipe solves a specific problem and provides a solution and in-depth discussion of it.
 </p>
 
-<br>
-<br>
+</br>
+</br>
 
 <h3>Table of Contents</h3>
 <ul class="no-bullets">
