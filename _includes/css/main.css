@@ -5,7 +5,10 @@
   width: 100%;
   z-index: 99;
 
-  @media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .fixed {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 1px var(--border-color);
   }
@@ -22,7 +25,10 @@ nav {
 
   padding: var(--space-1);
 
-  @media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 1px var(--border-color);
   }
