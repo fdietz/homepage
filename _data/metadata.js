@@ -1,11 +1,11 @@
 module.exports = {
   title: "Frederik Dietz",
   url: "https://fdietz.de",
-  description: "I am writing about my experiences as a software developer.",
+  description: "Frederik Dietz - Homepage",
   feed: {
-    subtitle: "I am writing about my experiences as a software developer.",
+    subtitle: "Frederik Dietz - Homepage",
     filename: "feed.xml",
-    path: "/feed/feed.xml",
+    path: "feed.xml",
     id: "https://fdietz.de"
   },
   author: {

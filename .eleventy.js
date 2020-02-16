@@ -75,6 +75,10 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
+  eleventyConfig.addFilter("dump", function(str) {
+    return JSON.stringify(str, null, "\t");
+  });
+
   const htmlmin = require("html-minifier");
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (outputPath.endsWith(".html")) {
