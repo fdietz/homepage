@@ -23,6 +23,8 @@
     "html-minifier": "^4.0.0",
     "luxon": "^1.22.0",
     "clean-css": "^4.2.3",
-    "terser": "^4.6.3"
+    "terser": "^4.6.3",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.2.5"
   }
 }

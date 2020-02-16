@@ -1,6 +1,9 @@
+const fs = require("fs");
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const Terser = require("terser");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require("eleventy-plugin-sass");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -83,6 +86,34 @@ module.exports = function(eleventyConfig) {
       return minified;
     }
     return content;
+  });
+
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: "#"
+  });
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // Browsersync Overrides
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync("./404.html");
+
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    },
+    ui: false,
+    ghostMode: false
   });
 
   return {
