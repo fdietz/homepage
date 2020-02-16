@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
   // Copy the `assets` directory to the compiled site folder
   eleventyConfig.addPassthroughCopy({ "assets/images": "images" });
   eleventyConfig.addPassthroughCopy("manifest.json");
+  eleventyConfig.addPassthroughCopy("admin");
 
   // blogpost collection
   eleventyConfig.addCollection("posts", function(collection) {
