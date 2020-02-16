@@ -13,7 +13,7 @@ My name is Frederik Dietz and I'm a passionate software developer, located in be
 
 I'm a founder and freelance developer with more than 15 years experience and contributor to open-source and free software.
 
-For more detailed information have a look at my <a href="http://github.com/fdietz/">GitHub</a>, <a href="https://www.xing.com/profile/Frederik_Dietz2">XING</a> or <a href="http://www.linkedin.com/pub/frederik-dietz/2/a8b/18a">LinkedIn</a> profiles.
+For more detailed information have a look at my [GitHub](http://github.com/fdietz), [XING](https://www.xing.com/profile/Frederik_Dietz2) or [LinkedIn](http://www.linkedin.com/pub/frederik-dietz/2/a8b/18a) profiles.
 
 ## Hire me
 
@@ -47,6 +47,6 @@ As part of the XING frontend architecture team building the tooling and componen
 
 Implementation and roll out of a new Grunt based asset pipeline and optimization of deployment and versioning of assets with multiple Ruby on Rails apps — [Link](https://www.wlw.de)
 
-### Legacy code migration for XING AG profile pages
+#### Legacy code migration for XING AG profile pages
 
 Assisting the XING backend architecture team with migrating a central legacy component to a new Ruby on Rails backend serving 200 million requests per day. Used technologies are Ruby, Rails, Elixir and Phoenix. — [Link](https://www.xing.com/profile/Frederik_Dietz2)

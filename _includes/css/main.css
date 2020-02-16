@@ -203,3 +203,20 @@ main code {
   padding: 0.25rem;
   font-size: 1.1rem;
 }
+
+.profile-image {
+  float: right;
+  margin-left: 2rem;
+}
+
+.profile-image img {
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .profile-image {
+    float: none;
+    text-align: center;
+    margin: 2rem;
+  }
+}
