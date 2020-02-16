@@ -21,8 +21,8 @@
   --color-gray-light: #bbb;
   --color-blue: #1eaedb;
   --color-blue-light: #33c3f0;
-  --color-red: #d85d52;
-  --color-red-light: #fa6d60;
+  --color-red: #c1544a;
+  --color-red-light: #d0584d;
   --color-brand: var(--color-red);
   --color-brand-light: var(--color-red-light);
   /*
