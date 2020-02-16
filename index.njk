@@ -1,15 +1,50 @@
 ---
 layout: page
 ---
+<h1>Welcome</h1>
+<p>Hi, my name is Frederik Dietz and I'm a passionate software developer located
+in beautiful Hamburg, Germany.</p>
+<p>I am a company founder (<a href="https://www.nearbyminds.com/">nearbyminds</a>/<a href="http://nrbyxmedia.com/">nrbyXmedia</a>) and freelancer with a focus on React, Vue.js, Elixir, Phoenix Framework and Ruby on Rails. Get in <a href="mailto:fdietz@gmail.com">contact</a> or learn more <a href="/about.html">about</a> me!</p>
 
-<h1>Eleventy Test</h1>
+<h2>Blog Posts</h2>
 
-<h1>Latest 3 Posts</h1>
-
-{% set postslist = collections.posts | head(-3) %}
+{% set postslist = collections.posts | head(-5) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
 
 All <a href="/tags">tags</a>.
+
+<h2>Projects</h2>
+<ul class="project-list no-bullets">
+  <li>
+    <a href="vue-component-patterns-course.html">
+      <img src="/images/vue_book.png" width="120" alt="vue.js components course">
+      <h4>Vue.js Component Patterns Course</h4>
+      <p>The goal of this course is to teach you the fundamentals to make Vue.js components that are simpler, more flexible
+          and most of all fun to build and use!</p>
+    </a>
+  </li>
+  <li>
+    <a href="/2015/04/13/day-1-how-to-build-your-own-team-chat-in-five-days.html">
+      <img src="/images/chitchat_screen_1_small.png" width="120" alt="chit chat client">
+      <h4>How to build your own team chat in five days</h4>
+      <p>Learn to use AngularJS with ES6 today!</p>
+    </a>
+  </li>
+  <li>
+    <a href="http://fdietz.github.com/team_dashboard">
+      <img src="/images/team_dashboard.png" width="120" alt="team_dashboard_screenshot">
+      <h4>Team Dashboard</h4>
+      <p>Visualize your team's metrics all in one place.</p>
+    </a>
+  </li>
+  <li>
+    <a href="/angular-recipes-book.html">
+      <img src="/images/book-medium.png" width="120" alt="recipes with angular.js book">
+      <h4>Recipes with Angular.js</h4>
+      <p>Practical concepts and techniques for rapid web application development</p>
+    </a>
+  </li>
+</ul>
