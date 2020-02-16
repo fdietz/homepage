@@ -18,7 +18,7 @@
   --color-white: white;
   --color-black: #555;
   --color-gray: #7c696f;
-  --color-gray-light: #bbb;
+  --color-gray-light: #efefef;
   --color-blue: #1eaedb;
   --color-blue-light: #33c3f0;
   --color-red: #cd2653;
@@ -46,16 +46,16 @@
   --font-size-base: 1rem;
   --font-weight-base: normal;
   --font-weight-bold: bold;
-  --line-height-base: 1.5;
+  --line-height-base: 1.65;
   /* modular scale using http://type-scale.com/ */
-  --font-size-h1: 3.998rem;
-  --font-size-h2: 2.827rem;
-  --font-size-h3: 1.999rem;
-  --font-size-h4: 1.414rem;
-  --font-size-h5: 1rem;
+  --font-size-h1: 3.052rem;
+  --font-size-h2: 2.441rem;
+  --font-size-h3: 1.953rem;
+  --font-size-h4: 1.563rem;
+  --font-size-h5: 1.25rem;
   --font-size-h6: 0.707rem;
-  --font-size-small: 0.707rem;
-  --heading-line-height: 1.2em;
+  --font-size-small: 0.8rem;
+  --heading-line-height: 1.15;
 
   /* main colors */
   --body-color: var(--color-black);
@@ -125,7 +125,7 @@ html {
   /* 2 */
   font-family: sans-serif;
   /* 3 */
-  line-height: 1.15;
+  line-height: 1.65;
   /* 4 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -242,7 +242,7 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: 1.15rem;
 }
 
 
@@ -709,7 +709,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: var(--margin-bottom);
+  margin: 2.75rem 0 1.05rem;
   font-weight: bold;
   line-height: var(--heading-line-height);
 }

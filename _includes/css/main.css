@@ -15,9 +15,11 @@
 }
 
 nav {
+  position: relative;
+  height: 65px;
+
   display: flex;  
   align-items: center;
-  position: relative;
 
   max-width: 48em;
   margin-left: auto;
@@ -70,7 +72,7 @@ nav .menu > li a {
 .main-content {
   width: 100%;
   max-width: 48em;
-  margin-top: calc(50px + 3rem);
+  margin-top: 65px;
   margin-left: auto;
   margin-right: auto;
 
@@ -171,4 +173,20 @@ footer {
 
 .taglist-item a {
   color: inherit;
+}
+
+main figure {
+  margin: 2.75rem 0;
+  text-align: center;
+}
+
+main pre[class*="language-"] { 
+  margin: 2.75rem 0;
+}
+
+main code {
+  background-color: var(--color-gray-light);
+  border-radius: 4px;
+  padding: 0.25rem;
+  font-size: 1.1rem;
 }
