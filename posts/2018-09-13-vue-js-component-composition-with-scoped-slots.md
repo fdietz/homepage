@@ -1,7 +1,9 @@
 ---
-layout: post
 title: Vue.js Component Composition with Scoped Slots
-published: true
+date: 2020-02-16T17:19:57.950Z
+tags:
+  - vue
+  - vuejs
 ---
 
 In the [previous post](/2018/09/05/vue-js-component-composition-with-slots.html) we looked into slots and named slots to compose our components and content in a very flexible way.
