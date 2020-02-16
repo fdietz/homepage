@@ -1,7 +1,9 @@
 ---
-layout: post
 title: Vue.js Component Composition with Slots
-published: true
+date: 2020-02-16T17:34:51.628Z
+tags:
+  - vue
+  - vuejs
 ---
 
 In the [previous post](/2018/08/23/introduction-to-vue-js-components.html) we introduced the Vue.js component model and saw how to pass data to
