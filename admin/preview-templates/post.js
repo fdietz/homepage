@@ -23,7 +23,6 @@ const Post = createClass({
               ${" by Author"}
             </small>
           </p>
-          <p>${entry.getIn(["data", "summary"], "")}</p>
           ${this.props.widgetFor("body")}
           <p>
             ${entry.getIn(["data", "tags"], []).map(
