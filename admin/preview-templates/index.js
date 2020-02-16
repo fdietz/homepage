@@ -5,9 +5,9 @@ import Page from "/admin/preview-templates/page.js";
 CMS.registerPreviewTemplate("blog", Post);
 CMS.registerPreviewTemplate("pages", Page);
 
-CMS.registerPreviewStyle("/_includes/css/base.css");
-CMS.registerPreviewStyle("/_includes/css/main.css");
-CMS.registerPreviewStyle("/_includes/css/prism.css");
+CMS.registerPreviewStyle("/css/base.css");
+CMS.registerPreviewStyle("/css/main.css");
+CMS.registerPreviewStyle("/css/prism.css");
 
 // Register any CSS file on the home page as a preview style
 fetch("/")

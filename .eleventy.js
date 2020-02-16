@@ -25,6 +25,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "assets/images": "images" });
   eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy({ "_includes/css": "css" });
 
   // blogpost collection
   eleventyConfig.addCollection("posts", function(collection) {
