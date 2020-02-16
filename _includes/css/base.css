@@ -16,12 +16,12 @@
 
 :root {
   --color-white: white;
-  --color-black: #606c76;
-  --color-gray: #868e96;
+  --color-black: #555;
+  --color-gray: #7c696f;
   --color-gray-light: #bbb;
   --color-blue: #1eaedb;
   --color-blue-light: #33c3f0;
-  --color-red: #c1544a;
+  --color-red: #cd2653;
   --color-red-light: #d0584d;
   --color-brand: var(--color-red);
   --color-brand-light: var(--color-red-light);
@@ -41,7 +41,7 @@
   Arial,
     sans-serif !default;
   */
-  --font-family-base: "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-family-base: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   /* Assumes the browser default, typically 16px */
   --font-size-base: 1rem;
   --font-weight-base: normal;
@@ -133,6 +133,8 @@ html {
   -ms-overflow-style: scrollbar;
   /* 6 */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  /* font-size: 1rem; */
 }
 
 *,
@@ -225,8 +227,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: var(--margin-bottom-sm);
+  margin-top: 2rem;
+  margin-bottom: var(--margin-bottom);
 }
 
 
@@ -691,11 +693,11 @@ template {
 
 /************************* Base Styles *************************/
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   html {
     font-size: 1.2rem;
   }
-}
+} */
 
 
 /************************* Typography *************************/
@@ -706,8 +708,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: var(--margin-bottom-sm);
-  font-weight: inherit;
+  margin-bottom: var(--margin-bottom);
+  font-weight: bold;
   line-height: var(--heading-line-height);
 }
 

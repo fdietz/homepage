@@ -7,6 +7,9 @@ const markdownItAnchor = require("markdown-it-anchor");
 const pluginSass = require("eleventy-plugin-sass");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const readingTime = require("./_filters/readingTime");
+const getTagList = require("./_filters/getTagList");
+const stringify = require("javascript-stringify").stringify;
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSass);
@@ -43,7 +46,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+      "dd LLLL, yyyy"
     );
   });
 
@@ -59,7 +62,7 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./_filters/getTagList.js"));
+  eleventyConfig.addCollection("tagList", getTagList);
 
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
@@ -76,8 +79,12 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("dump", function(str) {
-    return JSON.stringify(str, null, "\t");
+    const output = stringify(str, null, "\t", { maxDepth: 3 });
+    console.log(output);
+    return "";
   });
+
+  eleventyConfig.addFilter("readingTime", readingTime);
 
   const htmlmin = require("html-minifier");
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {

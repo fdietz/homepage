@@ -27,7 +27,7 @@
 
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -38,11 +38,11 @@
   {{ content | safe }}
 
   <footer>
-      &copy; {{ metadata.buildTime | readableDate }}
-      |
-      <a href="/feed.xml"> RSS </a>
-      |
-      <a href="http://twitter.com/fdietz/">@fdietz</a>
+    &copy; {{ metadata.buildTime | readableDate }}
+    |
+    <a href="/feed.xml"> RSS </a>
+    |
+    <a href="http://twitter.com/fdietz/">@fdietz</a>
   </footer>
 
   {% set js %}

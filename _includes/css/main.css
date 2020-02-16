@@ -59,12 +59,12 @@ nav .menu {
 nav .menu > li {
   display: inline-block;
   margin-left: 1em;
-  text-transform: uppercase;
-  font-size: 90%;
+  /* text-transform: uppercase; */
+  /* font-size: 90%; */
 }
 
 nav .menu > li a {
-  color: var(--color-black);
+  /* color: var(--color-black); */
 }
 
 .main-content {
@@ -87,5 +87,66 @@ nav .menu > li a {
 }
 
 .divider {
-  margin: 0 0.5em;
+  margin: 0 0.25em;
+}
+
+.list-unstyled { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.media {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  margin-bottom: var(--margin-bottom);
+  background-color: #f6f6f6;
+}
+
+.media:hover {
+  background-color: #f6f6f6;
+}
+
+.media-body {
+  display: block;
+  margin-left: 1rem;
+}
+
+.media-body h4 {
+  margin-top: 0;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
+}
+
+footer {
+  margin: 1rem;
+  text-align: center;
+}
+
+.postlist-item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: var(--margin-bottom);
+}
+
+.postlist-meta {
+  font-size: 0.8rem;
+  color: var(--color-gray);
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
