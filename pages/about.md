@@ -9,19 +9,20 @@ title: About
   <img src="/images/profile_2018.jpg" width="200" alt="profile">
 </div>
 
-My name is Frederik Dietz and I'm a passionate software developer, located in beautiful Hamburg, Germany.
+My name is Frederik Dietz and I'm a passionate software developer, located in beautiful Hamburg, Germany. You can correspond in German or English.
 
 I'm a founder and freelance developer with more than 15 years experience and contributor to open-source and free software.
 
-For more detailed information have a look at my [GitHub](http://github.com/fdietz), [XING](https://www.xing.com/profile/Frederik_Dietz2) or [LinkedIn](http://www.linkedin.com/pub/frederik-dietz/2/a8b/18a) profiles.
+For more detailed information have a look at my [GitHub](http://github.com/fdietz), [Twitter](https://twitter.com/fdietz), [XING](https://www.xing.com/profile/Frederik_Dietz2) or [LinkedIn](http://www.linkedin.com/pub/frederik-dietz/2/a8b/18a) profiles.
 
 ## Hire me
 
-<p>
-  I'm available as a freelancer to support your team on-site (or remote). Additionally, I can build and deploy your web application as a full service.
-</p>
+I'm available as a freelancer to support your team on-site (or remote). Additionally, I can build and deploy your web application as a full service.
 
-### Skills
+## Workshops
+
+I help you getting your team up to speed in modern Javascript, Vue.js and GraphQL technologies in my workshops. Get in <a href="mailto:fdietz@gmail.com">touch</a> to learn more.
+## Skills
 
 * Strong foundation in Ruby, Javascript and frameworks as for example Vue.js, React and Ruby on Rails
 * Experience in agile software development
@@ -29,7 +30,11 @@ For more detailed information have a look at my [GitHub](http://github.com/fdiet
 * Believe in the value of modular, clean, sustainable and well-tested code
 * Being pragmatic about it!
 
-### Latest Client Projects
+## Latest Client Projects
+
+#### Insurance Backoffice Platform build for sum.cumo
+
+Implementation of a backoffice platform using GraphQL and Vue.js on which future client projects are based on. Successfully on ramped first new client on newly built platform — [Link](https://www.sumcumo.com/)
 
 #### Integration of modern GraphQL stack for XING AG
 

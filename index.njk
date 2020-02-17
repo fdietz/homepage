@@ -2,18 +2,19 @@
 layout: page
 title: Home
 ---
-<h1>Welcome</h1>
+<h1>Nice to meet you</h1>
 
 <p>Hi, my name is Frederik Dietz and I'm a passionate software developer located
 in beautiful Hamburg, Germany.</p>
-<p>I am a company founder (<a href="https://www.nearbyminds.com/">nearbyminds</a>/<a href="http://nrbyxmedia.com/">nrbyXmedia</a>) and freelancer with a focus on React, Vue.js, Elixir, Phoenix Framework and Ruby on Rails. Get in <a href="mailto:fdietz@gmail.com">contact</a> or learn more <a href="/about.html">about</a> me!</p>
 
-<h2>Blog Posts</h2>
+<p>I am a company founder (<a href="https://www.nearbyminds.com/">nearbyminds</a>/<a href="http://nrbyxmedia.com/">nrbyXmedia</a>) and freelancer with a focus on React, Vue.js and Ruby on Rails. Get in <a href="mailto:fdietz@gmail.com">contact</a> or learn more <a href="/pages/about">about</a> me first!</p>
+
+<h2>Posts</h2>
 
 {% set postslist = collections.posts | head(-5) %}
 {% include "postslist.njk" %}
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<p>More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.</p>
 
 <h2>Tags</h2>
 
@@ -25,8 +26,6 @@ in beautiful Hamburg, Germany.</p>
     </li>
   {% endfor %}
 </ul>
-
-All <a href="/tags">tags</a>.
 
 <h2>Books</h2>
 
