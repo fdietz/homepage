@@ -3,31 +3,26 @@ layout: page
 title: Recipes with Angular.js
 ---
 
-<h1>Recipes with Angular.js</h1>
-<h2 class="subheader">Practical concepts and techniques for rapid web application development</h2>
+# Recipes with Angular.js
 
-<p>
+<figure>
   <img src="/images/book-medium.png" width="200" alt="recipes with angular.js book">
-</p>
+</figure>
 
-<p>
-  <a class="button small" href="https://leanpub.com/recipes-with-angular-js">Learn More</a>
-  <a class="button small success" href="https://leanpub.com/recipes-with-angular-js/purchases/new">Buy on Leanpub</a>
-  <a class="button small success" href="http://www.amazon.com/dp/B00DK95V48">Buy on Amazon</a>
-</p>
+## It is free!
 
-<p>
-  <a href="http://angularjs.org/">Angular.js</a> is an open-source Javascript MVC (Model-View-Controller) framework developed by Google. It gives Javascript developers a highly structured approach to developing rich browser-based applications which leads to very high productivity.
-</p>
+Download the whole course for free.
 
-<p>
-  If you are using <a href="http://angularjs.org/">Angular.js</a>, or considering it, this cookbook provides easy to follow recipes for issues you are likely to face. Each recipe solves a specific problem and provides a solution and in-depth discussion of it.
-</p>
+<a href="https://leanpub.com/recipes-with-angular-js" class="button">Free Download</a>
 
-</br>
-</br>
+## What you'll learn
 
-<h3>Table of Contents</h3>
+<a href="http://angularjs.org/">Angular.js</a> is an open-source Javascript MVC (Model-View-Controller) framework developed by Google. It gives Javascript developers a highly structured approach to developing rich browser-based applications which leads to very high productivity.
+
+If you are using <a href="http://angularjs.org/">Angular.js</a>, or considering it, this cookbook provides easy to follow recipes for issues you are likely to face. Each recipe solves a specific problem and provides a solution and in-depth discussion of it.
+
+## Table of Contents
+
 <ul class="no-bullets">
   <li>
     Preface
