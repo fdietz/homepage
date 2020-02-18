@@ -200,6 +200,7 @@ main code {
 .profile-image {
   float: right;
   margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .profile-image img {
