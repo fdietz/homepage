@@ -227,4 +227,5 @@ a:hover {
 
 .direct-link {
   text-decoration: none;
+  color: var(--color-brand);
 }
