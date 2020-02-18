@@ -64,6 +64,10 @@ header .title img {
   margin-left: 1em;
 }
 
+.menu a {
+  text-decoration: none;
+}
+
 @media (max-width: 48em) {
   header {
     border-bottom: 1px solid var(--color-gray-light);
@@ -173,6 +177,10 @@ footer {
   text-transform: lowercase;
 }
 
+.taglist-item a {
+  text-decoration: none;
+}
+
 main figure {
   margin: 2.75rem 0;
   text-align: center;
@@ -204,4 +212,19 @@ main code {
     text-align: center;
     margin: 2rem;
   }
+}
+
+a {
+  color: unset;
+  text-decoration-color: var(--color-brand);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+a:hover {
+  color: var(--color-brand);
+}
+
+.direct-link {
+  text-decoration: none;
 }

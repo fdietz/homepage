@@ -17,11 +17,11 @@
 :root {
   --color-white: white;
   --color-black: #555;
-  --color-gray: #7c696f;
+  --color-gray: #888;
   --color-gray-light: #efefef;
   --color-blue: #1eaedb;
   --color-blue-light: #33c3f0;
-  --color-red: #cd2653;
+  --color-red: #f83f05;
   --color-red-light: #d0584d;
   --color-brand: var(--color-red);
   --color-brand-light: var(--color-red-light);
