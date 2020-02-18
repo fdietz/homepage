@@ -147,7 +147,7 @@ footer {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: var(--margin-bottom-sm);
 }
 
 .postlist-meta {
