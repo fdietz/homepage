@@ -43,3 +43,7 @@ More posts can be found in <a href="{{ '/archive/' | url }}">the archive</a>.
     </div>
   </li>
 </ul>
+
+## Uses
+
+I've hard that famous people regularly get asked about their setup. So, here's my [uses page](/pages/uses) in case I become famous ;-)
