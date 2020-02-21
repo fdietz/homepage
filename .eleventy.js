@@ -27,9 +27,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy({ "_includes/css": "css" });
 
+  const enableDrafts = process.env.DRAFTS ? Boolean(process.env.DRAFTS) : false;
+
   // blogpost collection
   eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getFilteredByGlob("./posts/*.md");
+    const allPages = collection.getFilteredByGlob("./posts/*.md");
+    if (enableDrafts) {
+      const draftPages = collection.getFilteredByGlob("./drafts/*.md");
+      return allPages.concat(draftPages);
+    }
+
+    return allPages;
+  });
+
+  eleventyConfig.addCollection("drafts", collection => {
+    return collection.getFilteredByGlob("./src/drafts/*.md");
   });
 
   // projects collection
@@ -90,7 +102,11 @@ module.exports = function(eleventyConfig) {
 
   const htmlmin = require("html-minifier");
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if (outputPath.endsWith(".html")) {
+    if (
+      outputPath &&
+      "string" === typeof outputPath &&
+      outputPath.endsWith(".html")
+    ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: false, // we need comments to identify the expcerpt split marker.

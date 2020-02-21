@@ -1,7 +1,7 @@
 module.exports = function readingTime(htmlContent) {
   const speed = 300;
   if (!htmlContent) {
-    return `0 ${printSeconds ? "seconds" : "minutes"}`;
+    return "seconds";
   }
 
   const content = htmlContent.replace(/(<([^>]+)>)/gi, "");
