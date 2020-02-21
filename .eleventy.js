@@ -27,7 +27,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy({ "_includes/css": "css" });
 
-  const enableDrafts = process.env.DRAFTS ? Boolean(process.env.DRAFTS) : false;
+  const enableDrafts =
+    process.env.ELEVENTY_ENV === "development" ? true : false;
 
   // blogpost collection
   eleventyConfig.addCollection("posts", function(collection) {

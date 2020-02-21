@@ -1,4 +1,4 @@
-const enableDrafts = process.env.DRAFTS ? Boolean(process.env.DRAFTS) : false;
+const enableDrafts = process.env.ELEVENTY_ENV === "development" ? true : false;
 
 module.exports = {
   permalink: enableDrafts ? "/posts/{{ title | slug }}/index.html" : false,
