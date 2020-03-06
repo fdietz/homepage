@@ -274,3 +274,5 @@ We achieved not only an increased reusability but additionally made it more user
 In this article we looked into Headless or Renderless components using Vue.js scoped lots and showed how to create highly reusable components which focus only on the logic and leave the rendering to the client.
 
 It is fascinating that the Vue.js slot mechanism can be used for such a large variety of use cases. And it will be interesting to watch the community come up with even more ideas.
+
+If you liked this article you can find much more content in my [Vue.js Component Patterns Book](/pages/vue-component-patterns-course/). Its free :-)
