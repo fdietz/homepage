@@ -4,6 +4,7 @@ const CleanCSS = require("clean-css");
 const Terser = require("terser");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require('markdown-it-attrs');
 const pluginSass = require("eleventy-plugin-sass");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -128,6 +129,8 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: "#"
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
+     
+  markdownLibrary.use(markdownItAttrs);
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({

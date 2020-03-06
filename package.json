@@ -27,5 +27,8 @@
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
     "terser": "^4.6.3"
+  },
+  "dependencies": {
+    "markdown-it-attrs": "^3.0.2"
   }
 }
