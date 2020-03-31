@@ -6,7 +6,7 @@ tags:
   - vuejs
 ---
 
-In the [previous article](/posts/vue-js-headless-components/) we looked into headless components and how to achieve maximum flexiblity by separating the logic from the rendering. In this article we focus on functional components. 
+In the [previous article](/posts/vue.js-headless-component/) we looked into headless components and how to achieve maximum flexiblity by separating the logic from the rendering. In this article we focus on functional components.
 
 In most Vue.js apps there are a lot of components which do not really do anything besides rendering a template. They do not contain any business logic or make use of the component lifecycle.
 
