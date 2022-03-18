@@ -7,7 +7,9 @@ templateEngineOverride: njk,md
 
 Hi, my name is Frederik Dietz and I'm a passionate software developer located in beautiful Hamburg, Germany.
 
-I am a company founder ([nearbyminds](https://www.nearbyminds.com)/[nrbyXmedia](http://nrbyxmedia.com/)) and freelancer with a focus on React, Vue.js and Ruby on Rails. Get in <a href="mailto:fdietz@gmail.com">contact</a> or learn more [about me](/pages/about) first!
+I am the co-founder and startup CTO of [fobizz](https://fobizz.com), [pubstage](https://pubstage.com/) and previously [nearbyminds](https://www.nearbyminds.com).
+
+Used to be a freelancer with a focus on React, Vue.js and Ruby on Rails but nowadays only focus on my companies. Get in <a href="mailto:fdietz@gmail.com">contact</a> or learn more [about me](/pages/about) first!
 
 ## Posts
 
